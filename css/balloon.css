@@ -4,9 +4,6 @@
   box-sizing: border-box;
   border: none;
   overflow: visible;
-}
-
-[data-balloon] {
   position: relative;
 }
 
@@ -34,7 +31,7 @@
   left: 50%;
   margin-bottom: -6px;
   transform: translate(-50%);
-  opacity: 1;
+  opacity: 0;
   transition: all 0.18s ease-out 0.18s;
 }
 
@@ -43,7 +40,7 @@
   left: 50%;
   margin-bottom: 5px;
   transform: translate(-50%, 6px);
-  opacity: 1;
+  opacity: 0;
   transition: all 0.18s ease-out 0.18s;
 }
 

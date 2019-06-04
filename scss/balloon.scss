@@ -4,9 +4,6 @@
   box-sizing: border-box;
   border: none;
   overflow: visible;
-}
-
-[data-balloon] {
   position: relative;
 }
 
@@ -29,13 +26,13 @@
   white-space: nowrap;
 }
 
-// 
+// 未 hover 时, 透明度为0
 [data-balloon][data-balloon-pos="up"]::before {
   bottom: 100%;
   left: 50%;
   margin-bottom: -6px;
   transform: translate(-50%);
-  opacity: 1;
+  opacity: 0;
   transition: all 0.18s ease-out 0.18s;
 }
 
@@ -44,11 +41,11 @@
   left: 50%;
   margin-bottom: 5px;
   transform: translate(-50%, 6px);
-  opacity: 1;
+  opacity: 0;
   transition: all 0.18s ease-out 0.18s;
 }
 
-// 
+// hover时 透明度为1 整体上移若干像素
 [data-balloon]:hover[data-balloon-pos="up"]::before {
   bottom: 100%;
   left: 50%;
